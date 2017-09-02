@@ -1,7 +1,7 @@
 const greeting = require("./greet.json");
 
-const greet = () => {
-    for (var key in greeting) {
+const greet = (key) => {
+    for (key in greeting) {
         console.log(key + ": " + greeting[key]);
     }
 };
